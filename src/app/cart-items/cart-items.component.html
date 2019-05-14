@@ -1,0 +1,23 @@
+<section class="cart pt-5 pb-5">
+  <div class="container pt-5">
+    <div *ngIf="items.length == 0" class="text-center mt-5 pt-5 mb-5 pb-5">
+      <h1 class="mt-5 pt-5 mb-5 pb-5">cart is empty :(</h1>
+    </div>
+    <div class="card mb-3 mt-5 ml-0 mr-2" style="width: 540px;" *ngFor="let item of filteredItems">
+      <div class="row no-gutters">
+        <div class="col-md-4">
+          <img src={{item.src}} class="card-img" alt={{item.name}} >
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h3 class="card-title text-primary pb-2">{{item.name}}</h3>
+            <h4 class="text-success pb-2">{{item.price}}</h4>
+            <button type="button" class="btn btn-primary" (click)="add(item.id)">+</button>
+            <span>{{item.count}}</span>
+            <button type="button" class="btn btn-primary" (click)="reduce(item.id)">-</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

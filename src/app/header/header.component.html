@@ -1,0 +1,39 @@
+<header class="header-navbar pt-3 pb-2">
+	<div class="container">
+		<div class="row justify-content-center">
+      <div class="col-2">
+        <div class="row justify-content-start">
+          <a class="navbar-brand" routerLink = "/">MonGo</a>
+        </div>
+      </div>
+			<div class="col-10">
+				<div class="row justify-content-end">
+					<nav class="navbar navbar-expand-lg">
+						<div class="collapse navbar-collapse">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item active pr-5">
+									<a class="nav-link" routerLink='/'>Home</a>
+								</li>
+                <li class="nav-item active pr-5">
+									<a class="nav-link" routerLink='/login'>Sign In</a>
+								</li>
+                <li class="nav-item active pr-5">
+									<form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+									</form>
+								</li>
+                <li class="nav-item active pr-5">
+									<a class="nav-link" routerLink='/cart-items'>
+                    <i class="fas fa-shopping-cart">
+                      <div class="cart-count">{{num}}</div>
+                    </i>
+                  </a>
+								</li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>

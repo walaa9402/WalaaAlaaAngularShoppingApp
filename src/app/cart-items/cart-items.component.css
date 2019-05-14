@@ -1,0 +1,12 @@
+.cart{
+  display: flex;
+  flex-wrap: wrap;
+
+}
+.btn{
+  margin: 2%;
+}
+.card{
+  display: inline-block;
+  vertical-align: top
+}

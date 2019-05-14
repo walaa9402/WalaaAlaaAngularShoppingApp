@@ -1,0 +1,21 @@
+<section class="details pt-5">
+  <div class="container pt-5">
+    <div class="row justify-content-start pt-5">
+      <div class="col-4 mb-3">
+        <img src={{item.src}} alt={{item.name}} width="100%">
+      </div>
+      <div class="col-8">
+        <h2 class="text-primary pb-3">{{item.name}}</h2>
+        <h3 class="text-secondary pb-3">{{item.categ}}</h3>
+        <h4 class="text-success pb-3">{{item.price}}</h4>
+        <button type="button" class="btn btn-primary" (click)="add(item.id)">+</button>
+        <span>{{n}}</span>
+        <button type="button" class="btn btn-primary" (click)="reduce(item.id)">-</button>
+      </div>
+      <div class="col-6">
+        <h4>Description :</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum necessitatibus magni sunt velit ab veritatis quisquam amet, distinctio, reprehenderit illum tempore commodi cupiditate accusantium. Dolor dignissimos magnam libero repellat accusantium.</p>
+      </div>
+    </div>
+  </div>
+</section>

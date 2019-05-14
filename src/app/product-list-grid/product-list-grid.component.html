@@ -1,0 +1,24 @@
+<section class="pt-5">
+  <div class="row justify-content-center pt-5 view m-0">
+      <a routerLink='/'>
+        <i class="fas fa-th"></i>
+      </a>
+      <a routerLink='/product-list-list'>
+        <i class="fas fa-th-list"></i>
+      </a>
+  </div>
+  <div class="row justify-content-center grid-view m-0">
+      <div class="card" style="width: 18rem;" *ngFor='let item of items'>
+        <a (click)='viewDetails(item)'>
+          <img src={{item.src}} class="card-img-top" alt={{item.name}}>
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">{{item.name}}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{item.categ}}</h6>
+          <p class="card-text">{{item.price}}</p>
+          <a class="btn btn-primary add" (click)="add(item.id)">+ Add to Card</a>
+          <a class="btn btn-danger remove" (click)="remove(item.id)">Remove</a>
+        </div>
+      </div>
+  </div>
+</section>

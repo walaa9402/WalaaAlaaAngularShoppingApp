@@ -1,0 +1,25 @@
+.header-navbar{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*  */
+.fa-shopping-cart{
+  position: relative;
+}
+a{
+  color: rgb(79, 123, 128);
+}
+a:hover{
+  color: rgb(31, 69, 73)
+}
+.cart-count{
+   background-color: lightblue ;
+   width: 190%;
+   height: 190%;
+   border-radius: 50%;
+   position: absolute;
+   top: -25px;
+   left: 50%;
+   text-align: center;
+   padding-top: 20%;
+   font-size: 22px;
+  }
